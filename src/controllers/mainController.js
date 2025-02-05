@@ -1,5 +1,7 @@
+const path = require('path');
+
 const index = (req,res)=>{
-    res.send("Holal");
+    res.sendFile(path.resolve(__dirname, '../../private/index.html'));
 };
 
 module.exports = {
