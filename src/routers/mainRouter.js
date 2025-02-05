@@ -2,8 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get('/', (req,res)=>{
-    res.send("Holal");
-})
+const mainController = require('../controllers/mainController');
+router.get('/',mainController.index);
 
 module.exports = router;
